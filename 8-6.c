@@ -7,6 +7,7 @@ void *calloc2(size_t items, size_t size) {
         return NULL;
     
     void *mem = malloc(items * size);
+    /* clear the memory */
     memset(mem, 0x00, items * size);
     return mem;
 }
